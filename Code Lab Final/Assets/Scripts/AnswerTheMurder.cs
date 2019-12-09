@@ -41,7 +41,8 @@ public class AnswerTheMurder : MonoBehaviour
     }
     public void Solve()
     {
-        if (solveText.text == "Spencer")
+        //if they guess right good end, if anything else bad end
+        if (solveText.text == "Spencer" || solveText.text == "spencer")
         {
             SceneManager.LoadScene("Good End");
         }
